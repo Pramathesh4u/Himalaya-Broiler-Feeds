@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{810DB1BC-F9E9-4F55-BCCB-C073213442A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stock</RootNamespace>
+    <AssemblyName>Stock</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Published\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>bin\New folder\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>C:\Users\NIT MIS 3\Downloads\itextsharp\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Stock\ChallanPrintDemo.aspx" />
+    <Content Include="Stock\image\bgimg.jpg" />
+    <Content Include="Stock\image\cal.jpg" />
+    <Content Include="Stock\NumToWordTest.aspx" />
+    <Content Include="Stock\startup\CustPaymentCollec.aspx" />
+    <Content Include="Stock\startup\CustPayReciept.aspx" />
+    <Content Include="Stock\startup\datatable.aspx" />
+    <Content Include="Stock\startup\home.aspx" />
+    <Content Include="Stock\startup\PrintBranchWiseSaleRpt.aspx" />
+    <Content Include="Stock\startup\PrintCustStatement.aspx" />
+    <Content Include="Stock\startup\PrintExpensesRpt.aspx" />
+    <Content Include="Stock\startup\PrintStockSaleDatewise.aspx" />
+    <Content Include="Stock\startup\PrintStock_SaleRpt.aspx" />
+    <Content Include="Stock\startup\PrintSuppPayDetails.aspx" />
+    <Content Include="Stock\startup\ProductMaster.aspx" />
+    <Content Include="Stock\startup\BrandMatser.aspx" />
+    <Content Include="Stock\startup\StockMaster.aspx" />
+    <Content Include="Stock\startup\printTest.aspx" />
+    <Content Include="Stock\startup\Sale.aspx" />
+    <Content Include="Stock\startup\Staff.aspx" />
+    <Content Include="Stock\startup\InvoiceGen.aspx" />
+    <Content Include="Stock\startup\Stock_SaleRpt.aspx" />
+    <Content Include="Stock\startup\SupplierPay.aspx" />
+    <Content Include="Stock\startup\ExpensesMaster.aspx" />
+    <Content Include="Stock\startup\ExpPayments.aspx" />
+    <Content Include="Stock\startup\StaffPayment.aspx" />
+    <Content Include="Stock\startup\ItemBrandMaster.aspx" />
+    <Content Include="Stock\startup\Center.aspx" />
+    <Content Include="Stock\startup\Supplier.aspx" />
+    <Content Include="Stock\startup\Customer.aspx" />
+    <Content Include="Stock\startup\User.aspx" />
+    <Content Include="Stock\startup\InvoiceRePrint.aspx" />
+    <Content Include="Stock\startup\BranchWiseSaleRpt.aspx" />
+    <Content Include="Stock\startup\ExpensesRpt.aspx" />
+    <Content Include="Stock\startup\DeleteInvoice.aspx" />
+    <Content Include="Stock\startup\SaleList.aspx" />
+    <Content Include="Stock\TestLogin.aspx" />
+    <Content Include="Stock\UserLogin.aspx" />
+    <Content Include="Stock\login2.aspx" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-grid.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-grid.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-grid.rtl.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-reboot.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-reboot.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-utilities.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-utilities.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap.rtl.css" />
+    <Content Include="Styles\bootstrap1\css\bootstrap.rtl.min.css" />
+    <Content Include="Styles\bootstrap1\css\shadow.css" />
+    <Content Include="Styles\bootstrap1\js\bootstrap.bundle.js" />
+    <Content Include="Styles\bootstrap1\js\bootstrap.bundle.min.js" />
+    <Content Include="Styles\bootstrap1\js\bootstrap.esm.js" />
+    <Content Include="Styles\bootstrap1\js\bootstrap.esm.min.js" />
+    <Content Include="Styles\bootstrap1\js\bootstrap.js" />
+    <Content Include="Styles\bootstrap1\js\bootstrap.min.js" />
+    <Content Include="Styles\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap\css\dataTables.bootstrap5.min.css" />
+    <Content Include="Styles\bootstrap\css\styles.css" />
+    <Content Include="Styles\bootstrap\css\StyleSheet1.css" />
+    <Content Include="Styles\bootstrap\css\table.css" />
+    <Content Include="Styles\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Styles\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Styles\bootstrap\js\bootstrap.js" />
+    <Content Include="Styles\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Styles\bootstrap\js\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Styles\bootstrap\js\jquery-1.4.1.js" />
+    <Content Include="Styles\bootstrap\js\jquery-1.4.1.min.js" />
+    <Content Include="Styles\bootstrap\js\script.js" />
+    <Content Include="Styles\LoginDesign.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\ChallanPrintDemo.aspx.cs">
+      <DependentUpon>ChallanPrintDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\ChallanPrintDemo.aspx.designer.cs">
+      <DependentUpon>ChallanPrintDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\DBConnection\ConnectionString.cs" />
+    <Compile Include="Stock\DBConnection\ConvertNumToWord.cs" />
+    <Compile Include="Stock\NumToWord.cs" />
+    <Compile Include="Stock\NumToWordTest.aspx.cs">
+      <DependentUpon>NumToWordTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\NumToWordTest.aspx.designer.cs">
+      <DependentUpon>NumToWordTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\CustPaymentCollec.aspx.cs">
+      <DependentUpon>CustPaymentCollec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\CustPaymentCollec.aspx.designer.cs">
+      <DependentUpon>CustPaymentCollec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\CustPayReciept.aspx.cs">
+      <DependentUpon>CustPayReciept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\CustPayReciept.aspx.designer.cs">
+      <DependentUpon>CustPayReciept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\datatable.aspx.cs">
+      <DependentUpon>datatable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\datatable.aspx.designer.cs">
+      <DependentUpon>datatable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\home.Master.cs">
+      <DependentUpon>home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\home.Master.designer.cs">
+      <DependentUpon>home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\HTMLWorker.cs" />
+    <Compile Include="Stock\startup\NewSite.Master.cs">
+      <DependentUpon>NewSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\NewSite.Master.designer.cs">
+      <DependentUpon>NewSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\PrintBranchWiseSaleRpt.aspx.cs">
+      <DependentUpon>PrintBranchWiseSaleRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\PrintBranchWiseSaleRpt.aspx.designer.cs">
+      <DependentUpon>PrintBranchWiseSaleRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\PrintCustStatement.aspx.cs">
+      <DependentUpon>PrintCustStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\PrintCustStatement.aspx.designer.cs">
+      <DependentUpon>PrintCustStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\PrintExpensesRpt.aspx.cs">
+      <DependentUpon>PrintExpensesRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\PrintExpensesRpt.aspx.designer.cs">
+      <DependentUpon>PrintExpensesRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\PrintStockSaleDatewise.aspx.cs">
+      <DependentUpon>PrintStockSaleDatewise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\PrintStockSaleDatewise.aspx.designer.cs">
+      <DependentUpon>PrintStockSaleDatewise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\PrintStock_SaleRpt.aspx.cs">
+      <DependentUpon>PrintStock_SaleRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\PrintStock_SaleRpt.aspx.designer.cs">
+      <DependentUpon>PrintStock_SaleRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\PrintSuppPayDetails.aspx.cs">
+      <DependentUpon>PrintSuppPayDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\PrintSuppPayDetails.aspx.designer.cs">
+      <DependentUpon>PrintSuppPayDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\ProductMaster.aspx.cs">
+      <DependentUpon>ProductMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\ProductMaster.aspx.designer.cs">
+      <DependentUpon>ProductMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\BrandMatser.aspx.cs">
+      <DependentUpon>BrandMatser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\BrandMatser.aspx.designer.cs">
+      <DependentUpon>BrandMatser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\StockMaster.aspx.cs">
+      <DependentUpon>StockMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\StockMaster.aspx.designer.cs">
+      <DependentUpon>StockMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\printTest.aspx.cs">
+      <DependentUpon>printTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\printTest.aspx.designer.cs">
+      <DependentUpon>printTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\Sale.aspx.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\Sale.aspx.designer.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\InvoiceGen.aspx.cs">
+      <DependentUpon>InvoiceGen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\InvoiceGen.aspx.designer.cs">
+      <DependentUpon>InvoiceGen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\Stock_SaleRpt.aspx.cs">
+      <DependentUpon>Stock_SaleRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\Stock_SaleRpt.aspx.designer.cs">
+      <DependentUpon>Stock_SaleRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\SupplierPay.aspx.cs">
+      <DependentUpon>SupplierPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\SupplierPay.aspx.designer.cs">
+      <DependentUpon>SupplierPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\ExpensesMaster.aspx.cs">
+      <DependentUpon>ExpensesMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\ExpensesMaster.aspx.designer.cs">
+      <DependentUpon>ExpensesMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\ExpPayments.aspx.cs">
+      <DependentUpon>ExpPayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\ExpPayments.aspx.designer.cs">
+      <DependentUpon>ExpPayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\StaffPayment.aspx.cs">
+      <DependentUpon>StaffPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\StaffPayment.aspx.designer.cs">
+      <DependentUpon>StaffPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\ItemBrandMaster.aspx.cs">
+      <DependentUpon>ItemBrandMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\ItemBrandMaster.aspx.designer.cs">
+      <DependentUpon>ItemBrandMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\Center.aspx.cs">
+      <DependentUpon>Center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\Center.aspx.designer.cs">
+      <DependentUpon>Center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\Supplier.aspx.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\Supplier.aspx.designer.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\InvoiceRePrint.aspx.cs">
+      <DependentUpon>InvoiceRePrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\InvoiceRePrint.aspx.designer.cs">
+      <DependentUpon>InvoiceRePrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\BranchWiseSaleRpt.aspx.cs">
+      <DependentUpon>BranchWiseSaleRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\BranchWiseSaleRpt.aspx.designer.cs">
+      <DependentUpon>BranchWiseSaleRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\ExpensesRpt.aspx.cs">
+      <DependentUpon>ExpensesRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\ExpensesRpt.aspx.designer.cs">
+      <DependentUpon>ExpensesRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\DeleteInvoice.aspx.cs">
+      <DependentUpon>DeleteInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\DeleteInvoice.aspx.designer.cs">
+      <DependentUpon>DeleteInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\SaleList.aspx.cs">
+      <DependentUpon>SaleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\startup\SaleList.aspx.designer.cs">
+      <DependentUpon>SaleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\startup\XmlWorkerHelper.cs" />
+    <Compile Include="Stock\TestLogin.aspx.cs">
+      <DependentUpon>TestLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\TestLogin.aspx.designer.cs">
+      <DependentUpon>TestLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Userlogin.Master.cs">
+      <DependentUpon>Userlogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\Userlogin.Master.designer.cs">
+      <DependentUpon>Userlogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\login2.aspx.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\login2.aspx.designer.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stock\startup\NewSite.Master" />
+    <None Include="packages.config" />
+    <None Include="Styles\bootstrap1\css\bootstrap-grid.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-grid.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-grid.rtl.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-reboot.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-reboot.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-utilities.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-utilities.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap.min.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap.rtl.css.map" />
+    <None Include="Styles\bootstrap1\css\bootstrap.rtl.min.css.map" />
+    <None Include="Styles\bootstrap1\js\bootstrap.bundle.js.map" />
+    <None Include="Styles\bootstrap1\js\bootstrap.bundle.min.js.map" />
+    <None Include="Styles\bootstrap1\js\bootstrap.esm.js.map" />
+    <None Include="Styles\bootstrap1\js\bootstrap.esm.min.js.map" />
+    <None Include="Styles\bootstrap1\js\bootstrap.js.map" />
+    <None Include="Styles\bootstrap1\js\bootstrap.min.js.map" />
+    <None Include="Styles\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="Styles\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="Styles\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="Styles\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="Styles\bootstrap\css\bootstrap.css.map" />
+    <None Include="Styles\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Styles\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="Styles\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="Styles\bootstrap\js\bootstrap.js.map" />
+    <None Include="Styles\bootstrap\js\bootstrap.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stock\Userlogin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stock\startup\home.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1568</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Stock</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
